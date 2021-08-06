@@ -30,7 +30,7 @@ const getAnswer = () => {
         setTimeout(() => {
             answer.innerHTML = messages.length;
         }, 1000);
-    } else if (input.value.lastIndexOf('?') === -1) {
+    } else if (input.value.slice(-1) !== '?') {
         answer.innerHTML = '';
         setTimeout(() => {
             answer.innerHTML = messages.question;
