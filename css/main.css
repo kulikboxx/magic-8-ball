@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background: -webkit-gradient(linear, left top, right top, from(#f46b45), to(#eea849));
+  background: linear-gradient(to right, #f46b45, #eea849);
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  min-height: 600px;
+}
+
+.app .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.app .container h1 {
+  margin-bottom: .3em;
+  font-size: 2.2rem;
+}
+
+.app .container h2,
+.app .container label {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.app .container .image {
+  position: relative;
+  margin: 2.5em 0;
+  max-width: 200px;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+  -webkit-transition: left .3s;
+  transition: left .3s;
+  cursor: pointer;
+}
+
+.app .container .question {
+  margin-top: 0.5em;
+  padding: .3em .7em;
+  width: 100%;
+  max-width: 600px;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #969696;
+  border-radius: 6px;
+  outline: none;
+}
+
+.app .container .answer {
+  margin: .7em .5em 0;
+  min-height: 22px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.app .container .answer span {
+  font-weight: 300;
+}
+
+.app .container .shake-ball {
+  -webkit-animation: shake 1s 1;
+          animation: shake 1s 1;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    left: -10px;
+  }
+  20% {
+    left: 10px;
+  }
+  40% {
+    left: -10px;
+  }
+  60% {
+    left: 10px;
+  }
+  80% {
+    left: -10px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    left: -10px;
+  }
+  20% {
+    left: 10px;
+  }
+  40% {
+    left: -10px;
+  }
+  60% {
+    left: 10px;
+  }
+  80% {
+    left: -10px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
